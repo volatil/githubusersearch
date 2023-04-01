@@ -3,21 +3,21 @@ module.exports = {
 		browser: true,
 		commonjs: true,
 		es2021: true,
-		jquery: true
+		jquery: true,
 	},
 	extends: [
 		"plugin:react/recommended",
-		"standard"
-		// "airbnb"
+		"standard",
+		"airbnb",
 	],
 	overrides: [
 	],
 	parserOptions: {
 		ecmaVersion: "latest",
-		sourceType: "module"
+		sourceType: "module",
 	},
 	plugins: [
-		"react"
+		"react",
 	],
 	rules: {
 		// "eol-last": 0,
@@ -48,6 +48,6 @@ module.exports = {
 		"react/prop-types": 0,
 		"react/jsx-indent": [2, "tab"],
 		"react/jsx-indent-props": [2, "tab"],
-		"import/no-extraneous-dependencies": ["error", { devDependencies: true }]
-	}
+		"import/no-extraneous-dependencies": ["error", { devDependencies: true }],
+	},
 };

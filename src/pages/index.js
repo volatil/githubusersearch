@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home () {
-	console.debug("hola");
+export default function Home() {
 	return (
 		<>
 			<Head>
@@ -15,6 +14,69 @@ export default function Home () {
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<header>
+				<h1>devfinder</h1>
+			</header>
+			<section id="buscador">
+				<form>
+					<img alt="lupa" />
+					<input type="text" placeholder="Search Github usarname..." />
+					<button type="button">Search</button>
+				</form>
+			</section>
+			<main>
+				<div className="imagen">
+					<img alt="imagen usuario" />
+				</div>
+				<div className="informacion">
+					<div className="dataPrincipal">
+						<div className="usuario">
+							<h2>The Octocat</h2>
+							<p>@octocat</p>
+						</div>
+						<div className="desde">
+							<p>Joined 23 Jan 2011</p>
+						</div>
+					</div>
+					<div className="bio">
+						<p>This profile has no bio</p>
+					</div>
+					<div className="numeros">
+						<div>
+							<p className="titulo">Repos</p>
+							<p className="numero">8</p>
+						</div>
+						<div>
+							<p className="titulo">Followers</p>
+							<p className="numero">3938</p>
+						</div>
+						<div>
+							<p className="titulo">Following</p>
+							<p className="numero">9</p>
+						</div>
+					</div>
+					<div className="redes">
+						<div>
+							<img alt="pin" />
+							<p>San Francisco</p>
+						</div>
+						<div>
+							<img alt="twitter" />
+							<p>Not Available</p>
+						</div>
+						<div>
+							<img alt="web" />
+							<p>
+								<a href="https://github.blog" target="_blank" rel="noreferrer">https://github.blog</a>
+							</p>
+						</div>
+						<div>
+							<img alt="nose" />
+							<p>@github</p>
+						</div>
+					</div>
+				</div>
+			</main>
 		</>
 	);
 }
