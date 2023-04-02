@@ -10,7 +10,7 @@ import Header from "../components/Header";
 // const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-	const [getusuario, setgetusuario] = useState(false);
+	const [getusuario, setgetusuario] = useState();
 
 	async function fetchGithub(usuario) {
 		// USERS
@@ -53,7 +53,6 @@ export default function Home() {
 							type="button"
 							onClick={() => {
 								const nombreusuario = document.getElementsByClassName("campo")[0].value;
-								console.debug( `Nombre: ${nombreusuario}` );
 								fetchGithub(nombreusuario).then((x) => {
 									setgetusuario(x);
 								});

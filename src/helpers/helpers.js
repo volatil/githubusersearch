@@ -13,4 +13,10 @@ export function desde(fecharecibida) {
 }
 
 export const rutaIMG = (nombre) => `/assets/svg/${nombre}.svg`;
-export const existNetwork = (param) => !param && "notavailable";
+
+export const existNetwork = function (param) {
+	if ( param ) {
+		return "siavailable";
+	}
+	return "notavailable";
+};

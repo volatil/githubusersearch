@@ -18,7 +18,7 @@ body {
 	background: #141d30;
 }
 main {
-	width: 70%;
+	width: 600px;
 	margin: 40px auto 0;
 }
 header {
@@ -141,7 +141,22 @@ header > h1 {
 #usuario .informacion .redes > div > p.notavailable {
 	color: var(--gris);
 }
-/* #usuario .informacion .redes > div > p > a {
-	color: white;
-	text-decoration: none;
-} */
+
+@media ( max-width: 850px ) {
+	main {
+		width: 90%;
+	}
+	#buscador > form > input {
+		font-size: .7em;
+	}
+	#usuario .principal .imagen {
+		width: 15%;
+		margin-right: 3%;
+	}
+	#usuario .principal .imagen > img {
+		width: 100%;
+	}
+	#usuario .principal .dataPrincipal {
+		width: 85%;
+	}
+}

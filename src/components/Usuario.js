@@ -1,8 +1,6 @@
 import { desde, rutaIMG, existNetwork } from "../helpers/helpers";
 
 function usuario(props) {
-	console.debug( props.data );
-
 	return (
 		<section id="usuario" className="bloque">
 			<div className="principal">
